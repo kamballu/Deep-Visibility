@@ -49,16 +49,8 @@ plt.colorbar()
 plt.show()
 ```
 
-    WARNING:tensorflow:From D:\Programs\Anaconda\envs\tensorflow\lib\site-packages\keras\backend\tensorflow_backend.py:1205: calling reduce_prod (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
-    Instructions for updating:
-    keep_dims is deprecated, use keepdims instead
-    WARNING:tensorflow:From D:\Programs\Anaconda\envs\tensorflow\lib\site-packages\keras\backend\tensorflow_backend.py:1290: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
-    Instructions for updating:
-    keep_dims is deprecated, use keepdims instead
-    
 
-
-![png](output_3_1.png)
+![png](tmp/output_3_1.png)
 
 
 In the map above, information in areas of low visibility thresholds is easily seen by the human eyes and those in high visibility thresholds are difficult to see. Here, it looks like thresholds for the sky is around 1.5 and for the grass is around 4.
@@ -77,7 +69,7 @@ plt.show()
 ```
 
 
-![png](output_5_0.png)
+![png](tmp/output_5_0.png)
 
 
 Now we add this message to the original image and see the results.
@@ -91,7 +83,7 @@ cv2.imwrite("tmp\\noisy1.bmp", np.uint8( np.clip(img+noise, 0, 255)) )
 ```
 
 
-![png](output_7_0.png)
+![png](tmp/output_7_0.png)
 
 
 
