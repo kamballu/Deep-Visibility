@@ -1,4 +1,3 @@
-
 # Deep Image Distortion Visibility
 Implementation of paper "Learning Local Distortion Visibility from Image Quality"
 * Cite: N. K. Kottayil, G. Valenzise, F. Dufaux and I. Cheng, "Learning Local Distortion Visibility from Image Quality," in IEEE International Conference on Image Processing, (accepted).
@@ -15,7 +14,7 @@ Implementation of paper "Learning Local Distortion Visibility from Image Quality
 
 ## Demo
 
-This example shows how to generate an error detection threshold map from any given image. All image distortions below the detected theshold will be barely visible to the human eyes.
+This example shows how to generate an error detection threshold map from any given image. All image distortions below the detected threshold will be barely visible to the human eyes.
 
 
 ```python
@@ -36,7 +35,7 @@ plt.show()
 ![png](tmp/output_1_2.png)
 
 
-Determining the visibility threhsolds. 
+Determining the visibility thresholds. 
 
 
 ```python
@@ -57,7 +56,7 @@ In the map above, information in areas of low visibility thresholds is easily se
 
 ## Simple use case
 
-We now demonstrate a possible use case of hiding some watermarks usign our approach. Let us add some simple messages (acting as distortions here) and scale the values to a maximum intensity of 4. Note that the 'distortion' here is the message as shown below.
+We now demonstrate a possible use case of hiding some watermarks using our approach. Let us add some simple messages (acting as distortions here) and scale the values to a maximum intensity of 4. Note that the 'distortion' here is the message as shown below.
 
 
 ```python
@@ -89,7 +88,7 @@ cv2.imwrite("tmp\\noisy1.bmp", np.uint8( np.clip(img+noise, 0, 255)) )
 
 
 
-Since the distortion was scaled to have maximum of 4 (more than the visibility threhsolds in the sky), it is visible; but distortion intensity of 4 is below the visibility theshold of the grass. So our message is not visible in the grass.
+Since the distortion was scaled to have a maximum of 4 (more than the visibility thresholds in the sky), it is visible; but distortion intensity of 4 is below the visibility threshold of the grass. So our message is not visible in the grass.
 
 Now to hide the distortion in the sky, we can scale the noise to a value that is less than 1.5. And we can add this back to the original image.
 
