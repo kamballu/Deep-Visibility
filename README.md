@@ -31,19 +31,9 @@ plt.title("Luminance")
 plt.colorbar()
 plt.show()
 ```
+  
 
-    D:\Programs\Anaconda\envs\tensorflow\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-      from ._conv import register_converters as _register_converters
-    Using TensorFlow backend.
-    
-
-    WARNING:tensorflow:From D:\Programs\Anaconda\envs\tensorflow\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
-    Instructions for updating:
-    Use the retry module or similar alternatives.
-    
-
-
-![png](output_1_2.png)
+![png](tmp/output_1_2.png)
 
 
 Determining the visibility threhsolds. 
