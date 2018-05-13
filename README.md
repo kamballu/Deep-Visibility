@@ -89,10 +89,6 @@ cv2.imwrite("tmp\\noisy1.bmp", np.uint8( np.clip(img+noise, 0, 255)) )
 
 
 
-    True
-
-
-
 Since the distortion was scaled to have maximum of 4 (more than the visibility threhsolds in the sky), it is visible; but distortion intensity of 4 is below the visibility theshold of the grass. So our message is not visible in the grass.
 
 Now to hide the distortion in the sky, we can scale the noise to a value that is less than 1.5. And we can add this back to the original image.
@@ -111,17 +107,13 @@ cv2.imwrite("tmp\\noisy2.bmp", np.uint8( np.clip(img+noise2, 0, 255) ) )
 ```
 
 
-![png](output_9_0.png)
+![png](tmp/output_9_0.png)
 
 
 
-![png](output_9_1.png)
+![png](tmp/output_9_1.png)
 
 
-
-
-
-    True
 
 
 
