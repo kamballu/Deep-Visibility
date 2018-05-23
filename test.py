@@ -31,7 +31,7 @@ plt.show()
 # insert information into image
 # Scale the information so that the intensity of is less than visibility 
 # threshold of the grass, but more than sky. 
-noise = np.mean( cv2.imread("noiseadd.bmp"), axis = 2 )/255.0*4
+noise = np.mean( cv2.imread("tmp\\noiseadd.bmp"), axis = 2 )/255.0*4
 plt.imshow(noise)
 plt.title("Noise added")
 plt.colorbar()
